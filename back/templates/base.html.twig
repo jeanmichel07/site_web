@@ -8,7 +8,9 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-
+    {% if not app.user %}
+        <script>window.location.href = "/login"</script>
+    {% else %}
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">NL-Technologie</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +23,7 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Recrutement</a>
+                    <a class="nav-link" href="{{ path('affiche_recrut') }}">Recrutement</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Equipe</a>
@@ -35,9 +37,7 @@
             </form>
         </div>
     </nav>
-    {% if not app.user %}
-        <p>Vous n'etes pas admin</p>
-     {% else %}
+
             <div class="container">
                 {% block body %}{% endblock %}
             </div>

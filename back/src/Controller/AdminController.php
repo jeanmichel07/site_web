@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 
@@ -32,10 +33,10 @@ class AdminController extends AbstractController
     }
 
     /**
-     * @Route("/login/read/recrutment", name="read_recrutement")
+     * @Route("/", name="home")
      */
-    public function read_recrutment()
+    public function home()
     {
-        return $this->render('recrutment/read.html.twig');
+        return $this->render('admin/home.html.twig');
     }
 }

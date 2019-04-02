@@ -2,17 +2,41 @@
 
 namespace App\Controller;
 
+use App\Entity\Recrutment;
+use App\Repository\RecrutmentRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
 class RecrutmentController extends AbstractController
 {
     /**
-     * @Route("/recrutment", name="recrutment")
+     * @var RecrutmentRepository
      */
-    public function index()
+    private $recrutmentRepository;
+
+    public function __construct(RecrutmentRepository $recrutmentRepository)
     {
-        return $this->render('recrutment/login.html.twig');
+        $this->recrutmentRepository = $recrutmentRepository;
+    }
+
+    /**
+     * @Route("/affiche/recrutement", name="affiche_recrut")
+     */
+    public function read()
+    {
+        $recru=$this->recrutmentRepository->findAll();
+        return $this->render('recrutment/read.html.twig',['recrut'=>$recru]);
+    }
+
+    /**
+     * @Route("/ajouter/recrutement", name="ajout_recrutement")
+     */
+    public function create()
+    {
+        $recrutement=new Recrutment();
+
+        $form= $this->createFormBuilder();
+
     }
 
 }
