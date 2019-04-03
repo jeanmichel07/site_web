@@ -58,4 +58,14 @@ class ApiController extends AbstractController
             return new JsonResponse($formatted);
         }
     }
+
+    /**
+     * @param Request $request
+     * @return JsonResponse
+     * 
+     */
+    public function visitor(Request $request):JsonResponse
+    {
+
+    }
 }
