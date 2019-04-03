@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RecrutmentController!{% endblock %}
+
+{% block body %}
+    <b>Poste {{ recrut.post }}</b><br>
+    <u><b>Profile</b></u>
+    <p>
+        {{ recrut.profil | raw }}
+    </p>
+
+    <u><b>Mission</b></u>
+    <p>
+        {{ recrut.mission | raw }}
+    </p>
+{% endblock %}
