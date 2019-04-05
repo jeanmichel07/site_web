@@ -8,6 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class EquipeController extends AbstractController
@@ -69,6 +70,7 @@ class EquipeController extends AbstractController
 
             $em->persist($equipe);
             $em->flush();
+            return $this->redirectToRoute('read_equipe');
         }
 
         return $this->render('equipe/create.html.twig',['form'=>$form->createView()]);
@@ -83,5 +85,17 @@ class EquipeController extends AbstractController
         $equipe=$this->equipeRepository->findAll();
 
         return $this->render('equipe/read.html.twig',['equipe'=>$equipe]);
+    }
+
+    /**
+     * @Route("/show/equipe/{id}", name="show_equipe")
+     * @param Equipe $equipe
+     * @return Response
+     */
+    public function show(Equipe $equipe):Response
+    {
+        return $this->render('equipe/show.html.twig',[
+            'e'=>$equipe
+        ]);
     }
 }

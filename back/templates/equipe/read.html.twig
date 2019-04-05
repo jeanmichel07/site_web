@@ -3,10 +3,23 @@
 {% block title %}Hello RecrutmentController!{% endblock %}
 
 {% block body %}
-    <h2>Les membres de l'equipe</h2>
-    {% for e in equipe %}
-        <image src="{{ asset('uploads/' ~ e.image) }}" width="50px">
+    <div class="container mt-4">
+        <h2>Les membres de l'equipe</h2>
+        <a href="{{ path('create_equipe') }}" class="btn btn-outline-primary">Ajouter</a><br>
+        <table class="table table-striped">
 
-        {{ e.nom }}
-    {% endfor %}
+            <thead>
+            <tr><th>Identifiant</th><th>Image</th><th>Nom</th><th>Poste</th><th>Action</th></tr>
+            </thead>
+            {% for e in equipe %}
+                <tbody><tr><td>{{ e.id }}</td><td><image src="{{ asset('uploads/' ~ e.image) }}" width="50px"/></td><td>{{ e.nom }}</td><td>{{ e.poste }}</td>
+                    <td>
+                        <a href="{{ path('show_equipe',{id:e.id}) }}" class="btn btn-primary">Voir</a>
+                        <a href="{{ path('update_recrutment',{id:e.id}) }}" class="btn btn-secondary">Edit</a>
+                        <a href="#" class="btn btn-danger">Supprimer</a>
+                    </td>
+                </tr></tbody>
+            {% endfor %}
+        </table>
+    </div>
 {% endblock %}

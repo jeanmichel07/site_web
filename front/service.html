@@ -6,14 +6,25 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link href="css/ninja-slider.css" rel="stylesheet" type="text/css"/>
-    <link href="css/agency.min.css" rel="stylesheet">
+  <link href="css/agency.min.css" rel="stylesheet">
+  <script type="text/javascript" src="v_player/jquery-1.4.2.min.js" ></script>
+  <style type="text/css">
+        @import url("v_player/skins/jquery.ui.themes/redmond/jquery-ui-1.7.2.css");
+  </style>  
+  <style type="text/css">
+        @import url("v_player/mwEmbed-player-static.css");
+  </style>    
+  <script type="text/javascript" src="v_player/mwEmbed-player-static.js" ></script>
 </head>
 <style>
-.service{
-  background-image: url("../img/service/di.png");
-}
-  .service table{
-    text-align: justify;
+  .inner-banner a{
+    color: white;
+    text-decoration: none;
+  }
+  .inner-banner a:hover{
+    color:#000029;
+    background: #b3b3b3;
+    text-decoration: none;
   }
 </style>
 <body>
@@ -56,505 +67,104 @@
     <div class="container">
       <div class="inner-banner col-md-5">
         <h1>Voici nos différents types de services digitaux:</h1>
-        <p>&#9989;&#x20;&#x20;Développement Sur Mesure Logiciel<br>
-          &#9989;&#x20;&#x20;Développement D'Application Mobile<br>
-          &#9989;&#x20;&#x20;Développement D'application Web
+        <p> <a href="#logi">&#9989;&#x20;&#x20;Développement Sur Mesure Logiciel<br></a>
+          <a href="#mob">&#9989;&#x20;&#x20;Développement D'Application Mobile<br></a>
+          <a href="#web">&#9989;&#x20;&#x20;Développement D'application Web</a>
         </p>
       </div>
       <div class="ban col-md-7">
-        <img src="img/service/ordi.png" style="width:50px height:50px" alt="">
+        <div class="shine">
+          <div>
+            <img src="img/service/ordi.png" class="resp">
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <!-- fin présentation -->
 <!-- service -->
-	<section class="container-fluid service">
+	<section class="container-fluid service" style="background-color:#f6f2f2;">
 		<div class="container">
-        	<div class="row" id="logi">
-          		<div class="col-lg-12 text-center">
-            		<h2 class="section-heading">DEVELOPPEMENT SUR MESURE LOGICIEL</h2>
-            		<h3 class="section-subheading text-muted">Conception et Développement de logiciel sur mesure</h3>
-          		</div>
-        	</div>
-    		<div class="container">
-    			<div class="row ">
-    				<div class="col-md-3 col-lg-3 col-xs-12 col-sm-12">
-    	            	<h4 style="color: #000029;">A quoi consite <br> un Logiciel sur Mesure?</h4>
-    	            	<p class="text-muted">
-                    <table>
-                      <form>
-                        <tr>
-                          <td>
-                            C'est un logiciel spécialement développé pour apporter une solution sur mesure à vos besoins grâce à :
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                              • Un audit personnalisé permettant d’optimiser les flux d’informations
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            • Des fonctionnalités adaptées pour votre métier avec une interface simple favorisant ainsi gain de temps et de productivité
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                             • Un respect de vos contraintes métiers
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            • Une solution évolutive selon vos besoins : 100 % sur mesure !
-                          </td>
-                        </tr>
-                      </form>
-                    </table>
-                    </p>
-    	          	</div> 
-    	          	<div class="col-md-3 col-lg-3 col-xs-12 col-sm-12">
-    	            	<h4 style="color: #000029;">Raisons de choisir <br> un logiciel sur mesure</h4>
-    	            	<p class="text-muted">
-                      <table>
-                        <form>
-                          <tr>
-                            <td>
-                              • Il n’existe pas de logiciel sur le marché répondant  à vos besoins.
-                            </td>
-                          </tr>
-                           <tr>
-                            <td>
-                              • Votre logiciel n’est plus maintenu ou dépassé et vous souhaitez le renouveler avec des technologies actuelles.
-                            </td>
-                          </tr>
-                           <tr>
-                            <td>
-                              • Les coûts de licences de votre progiciel sont très élevés pour un logiciel qui n’est pas forcément adapté et adaptable à tous vos besoins.
-                            </td>
-                          </tr>
-                           <tr>
-                            <td>
-                              • Vous deviendrez propriétaire de votre logiciel sur mesure.
-                            </td>
-                          </tr>
-                           <tr>
-                            <td>
-                              • Vous envisagez de monétiser ou revendre cette solution logicielle.
-                            </td>
-                          </tr>
-                        </form>
-                      </table>          
-                    </p>
-    	          	</div>
-    	          	<div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
-    	            	<h4 style="color: #000029;">&#9673;&#32;Avantage d’utiliser <br> un logiciel sur mesure :</h4>
-    	            	<p class="text-muted">
-                      <table>
-                        <form>
-                          <tr>
-                            <td>
-                               • Il est adapté à votre organisation et à vos contraintes métiers. 
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              • Il est simple avec une interface épurée et claire. 
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              •  nous pouvons mettre en place une maintenance évolutive en fonction des besoins de votre entreprise.
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              •  Il valorise votre entreprise et votre savoir-faire à travers un échange de connaissances. 
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              • Notre équipe est à l’écoute de vos utilisateurs, impliqués dès la conception du logiciel, permettant de rentrer dans le cœur de votre activité et d’avoir une meilleure compréhension de votre métier et donc de vos besoins.
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              • Il donne aux utilisateurs une meilleure appropriation. 
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                               • Le retour sur investissement d’un développement logiciel spécifique se calcule sur le long terme par un gain de temps et de productivité notable au sein de votre organisation. Le logiciel sur mesure est même souvent plus économique à terme car vous n'avez plus de licences généralement onéreuses à renouveler chaque année pour chaque utilisateur.
-                            </td>
-                          </tr>
-                        </form>
-                      </table> 
-                    </p>
-    				</div>
-
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12 text-center">
-                   <br>
-            <br>
-                  <h4 style="color: #000029;"> &#9673;&#32; Les Etapes pour convevoir et développer votre logiciel sur mesure</h4>
-                    <table style="width: 100%;" cellpadding="5" border="0">
-                      <form>
-                        <tr>
-                          <td valign="middle" align="center"><span style="font-size: medium; font-family:times new roman;"><strong>Collecte de vos besoins</strong></span></td>
-                          <td style="width: 90%; background-color: #b3b3b3;">
-                          <p style="text-align: justify;"><span style="font-size: medium; font-family:times new roman;">•  Contexte du projet : présentation du projet, objectif, cible (utilisateurs visés)<br>
-                          • Spécifications fonctionnelles : fonctionnalités attendues, priorités<br>
-                          • Contraintes techniques : systèmes d'exploitation, configuration réseau, appareils utilisés (fixes, mobiles...), accès Internet ou déconnecté ...<br>
-                          • Contraintes métiers, attentes et exigences particulières liées à votre activité : réglementation légale, méthodologie de travail ...<br>
-                          • Délai de mise en œuvre souhaité
-                          </span></p>
-                          </td>
-                        </tr>
-                      </form>
-                    </table>
-                    <p>&nbsp;</p>
-                    <table style="width: 100%;" cellpadding="5" border="0">
-                      <form>
-                        <tr>
-                          <td valign="middle" align="center"><span style="font-size: medium; font-family:times new roman;"><strong>Etude et analyse</strong></span></td>
-                          <td style="width: 90%; background-color: #b3b3b3;">
-                          <p style="text-align: justify;"><span style="font-size: medium; font-family:times new roman;">•  Rédaction de spécifications techniques à partir de vos spécifications fonctionnelles (comment nous allons procéder) : <br>
-                          &nbsp;&nbsp;&nbsp;- Choix des langages et technologies <br>
-                          &nbsp;&nbsp;&nbsp;- Définition de l’architecture du progiciel (structure générale, organisation des éléments et relations entre eux, ergonomie), précisant ses fonctions et les ensembles qui le composent<br>
-                          • Echanges afin de préciser vos besoins et notre compréhension du projet<br>
-                          • Estimation des temps de développement<br>
-                          • Echanges et accord commercial<br>
-                          • Elaboration du planning pour votre projet en fonction des priorités définies<br>
-                          </span></p>
-                          </td>
-                        </tr>
-                      </form>
-                    </table>
-                    <p>&nbsp;</p>
-                    <table style="width: 100%;" cellpadding="5" border="0">
-                      <form>
-                        <tr>
-                          <td valign="middle" align="center"><span style="font-size: medium; font-family:times new roman;"><strong>Dév spécifique</strong></span></td>
-                          <td style="width: 90%; text-align: justify; background-color: #b3b3b3;"><span style="font-size: medium; font-family:times new roman;">L'IHM (Interface Homme Machine) peut être réalisée selon vos spécifications ou la création d'éléments graphiques par un graphiste. Nous pouvons vous mettre en relation avec des spécialistes.<br>
-                          Une équipe de développement dédiée est mise en place pour votre projet, composée à minima d'un chef de projet et d'un analyste-programmeur. Notre équipe réalise le développement de votre solution à partir des spécifications et langages de programmation préalablement définis, en respectant les maquettes IHM fournies.<br>
-                          De nombreuses étapes de validation vous permettent de suivre l'avancement du projet et de vous assurer de la conformité des développements par rapport à vos demandes.
-                          </span>
-                          </td>
-                        </tr>
-                      </form>
-                    </table>
-                    <p>&nbsp;</p>
-                    <table style="width: 100%;" cellpadding="5" border="0">
-                      <form>
-                        <tr>
-                          <td valign="middle" align="center"><span style="font-size: medium; font-family:times new roman;">&nbsp;<strong>Phase de Tests</strong></span></td>
-                          <td style="width: 90%; text-align: justify; background-color: #b3b3b3;"><span style="font-size: medium; font-family:times new roman;">Un accès à une version de test est mis en place pendant toute la durée des développements afin que vous puissiez valider la conformité avec vos spécifications :<br>
-                          • Tests avant intégration : Afin de garantir l'efficacité de l'application, réalisation de nombreux tests aux différentes étapes de développement.<br>
-                          • Intégration, tests complets et qualification : Lors de l'intégration, tests d'intégration des données avec des jeux d'essais.<br>
-                          • Recette de l’application avec vos équipes : Vérification de la conformité du logiciel aux spécifications approuvées dans le cahier des charges.
-                          </span>
-                          </td>
-                        </tr>
-                      </form>
-                    </table>
-                    <p>&nbsp;</p>
-                    <table style="width: 100%;" cellpadding="5" border="0">
-                      <form>
-                        <tr>
-                          <td valign="middle" align="center"><span style="font-size: medium; font-family:times new roman;">&nbsp;<strong>La mise en production</strong></span></td>
-                          <td style="width: 90%; background-color: #b3b3b3;">
-                          <p style="text-align: justify;"><span style="font-size: medium; font-family:times new roman;">La mise en production ou implémentation. <br>
-                            Pour la mise en œuvre d'une application Web, 2 possibilités :<br>
-                            • Externaliser l'hébergement (dédié ou mutualisé) en Data Center sur serveurs LAMP avec sauvegardes régulières (accès à l'application via Internet)<br>
-                            • Hébergement en interne sur serveur local dans vos locaux nécessitant l'achat d'un serveur et son administration (accès direct sans passer par Internet - réseau local)<br>
-                            Pour la mise en œuvre d'une application native, nous vous remettons les fichiers d'installation (exécutables).
-                            </span></p>
-                          </td>
-                        </tr>
-                      </form>
-                    </table>
-                    <p>&nbsp;</p>
-                    <table style="width: 100%;" cellpadding="5" border="0">
-                      <form>
-                        <tr>
-                          <td valign="middle" align="center"><span style="font-size: medium; font-family:times new roman;">&nbsp;<strong>Guide des utilisateurs</strong></span></td>
-                          <td style="width: 90%; text-align: justify; background-color: #b3b3b3;"><span style="font-size: medium; font-family:times new roman;">Documentation détaillée : Elaboration d’une notice explicative<br>
-                          • Vidéo : Possibilité de réaliser des vidéos de démonstrations avec les scénarios de votre choix<br>
-                          • Formation : Formation de vos utilisateurs à la solution<br>
-                          • Hotline : Mise à disposition d’une hotline en cas d’urgence<br>
-                          </span>
-                          </td>
-                        </tr>
-                      </form>
-                    </table>
-                    <p>&nbsp;</p>
-                    <table style="width: 100%;" cellpadding="5" border="0">
-                      <form>
-                        <tr>
-                          <td valign="middle" align="center"><span style="font-size: medium; font-family:times new roman;"><strong>Evolutions</strong></span></td>
-                          <td style="width: 90%; background-color: #b3b3b3;">
-                          <p style="text-align: justify;"><span style="font-size: medium;">Dans le cadre du contrat de tierce maintenance applicative, nous appliquons une maintenance corrective et évolutive. <br>Les solutions que nous développons sont entièrement créées sur mesure et sont donc totalement évolutives en fonction de vos besoins.</span></p>
-                          </td>
-                        </tr>
-                      </form>
-                    </table>
-                </div>
-              </div>
-            </div>
-            <br><br>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <a href="contact.html" class="btn btn-danger" style="background-color: #000029; border:none; font-family:Eras Bold ITC; ">Commandez-votre Logiciel</a>
-                </div>
-              </div>
-            </div>
-			</div>
-	</div>
-  <br><br><br>
-  <div class="container">
-          <div class="row">
-              <div class="col-lg-12 text-center">
-                <h2 class="section-heading">DEVELOPPEMENT D'APPLICATION MOBILE</h2>
-                <h3 class="section-subheading text-muted">Voici nos différents types de services digitaux:</h3>
-              </div>
-          </div>
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
-          <h4>A quoi consiste une Application Mobile?</h4>
-          <p style="text-align: justify;">C’est une application développée pour des terminaux mobile (smartphones, tablettes…). Elle peut aussi avoir la mission d’optimiser des applications déjà créées ou d’adapter des sites Web au support mobile.<br>
-          Il est nécessaire de créer ce qu’on appelle plus communément une application Android.  La flexibilité d’Android permet de créer une unique application qui peut être rapidement adaptable aux différents environnements.<br>
-          Ce professionnel peut se spécialiser pour travailler sur des applications dédiées à Windows Phone, BlackBerry, Android ou iOS, ou même proposer des applications compatibles avec plusieurs de ces systèmes d’exploitation.<br><br>
-          </p>
-          <h4>Démarche pour votre Projet :</h4>
-          <p style="text-align: justify;">Les applications Android se doivent d’être des solutions adaptées à chaque entreprise et à chaque besoin spécifique.<br>
-          &#9312; Phase de démarrage du projet : nous vous apportons nos conseils dans la définition du besoin ainsi que dans la structure de l’application Android si nécessaire.<br>
-          &#9313; Phase de développement de l’application Android : durant cette étape, nous vous livrons toutes les semaines une version démonstration de l’application Android pour que vous puissiez voir les évolutions et faire vos retours, si nécessaire.<br>
-          &#9314; Phase de suivi de l’application Android : une fois l’application livrée et mise sur le marché si nécessaire, nous effectuons si nécessaire des correctifs d’application gratuitement pendant 1 an. De même, nous vous accompagnons également dans vos évolutions futures.<br><br>
-          </p>
-        </div> 
-        <div class="col-md-6">
-          <br><br><img src="img/service/6.png" widht="670px" height="670px">
-        </div>
+      <div class="row">
+        <div class="lecteur-1 col-md-6">
+        <video src="video/video-1.mp4" width="100%" height="274px" poster="img/service/ae.jpg"></video>
       </div>
-  </div>
-  <br><br>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <a href="contact.html" class="btn btn-danger" style="background-color: #000029; border:none; font-family:Eras Bold ITC; ">Commandez-votre Application</a>
-                </div>
-              </div>
-            </div>
-  <br><br><br>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-          <h2 class="section-heading">DEVELOPPEMENT D'APPLICATION WEB</h2>
-          <h3 class="section-subheading text-muted">Voici nos différents types de services digitaux:</h3>
-      </div>
-  </div>
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
-          <h4>&#9724;&#32;Qu’est-ce qu’un application web ?</h4>
-            <p style="text-align: justify;"> •  Une application web désigne un logiciel applicatif hébergé sur un serveur et accessible via un navigateur web.<br>
-              • Contrairement à un logiciel traditionnel, l’utilisateur d’une application web n’a pas besoin de l’installer sur son ordinateur. <br>
-              • Il lui suffit de se connecter à l’application à l’aide de son navigateur favori.<br>
-              • La tendance actuelle est d’offrir une expérience utilisateur et des fonctionnalités équivalentes aux logiciels directement installés sur les ordinateurs. <br>
-              Les technologies utilisées pour développer les applications web sont les mêmes que celles employées dans la création des sites internet.<br>
-            </p>
-      </div> 
-      <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
-        <h4>&#9724;&#32;Champs d’application</h4>
-        <p style="text-align: justify;">Habituellement, un utilisateur potentiel a l’habitude d’acheter un logiciel qu’il va installer sur son ordinateur. L’éditeur du logiciel, dans une logique cohérente de rentabilité, prévoira d’offrir de nombreuses fonctionnalités pour séduire un public le plus large possible. L’utilisateur se retrouvera donc avec une solution dont il n’utilisera en fin de compte qu’une infime partie.<br>
-        L’application web s’aborde d’une manière totalement différente. En effet, les coûts de développement sur mesure pour la création d’application web étant très accessibles, l’utilisateur pourra faire appel à une agence web pour se faire développer une solution spécifiquement adaptée à ses besoins. Une fois développée, la solution offrira uniquement les fonctionnalités dont les utilisateurs auront nécessité et pourra évoluer facilement en fonction des nouveaux besoins
+      <div class="desc_1 col-md-6"  id="logi">
+        <h2></i>Developpement sur mesure Logiciel <hr/></h2>
+        <p style="text-align: justify;">
+          <b><i class="fa fa-quote-left"></i>C'est un logiciel spécialement développé pour apporter une solution sur mesure à vos besoins grâce à:...<br><br> 
         </p>
+        <a href="logiciel.html" class="btn btn-danger" style="background-color: #000029; border:none; font-family:Eras Bold ITC;width: 200px; ">VOIR PLUS</a>
+        <br><br><br><br><br><br>
       </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h4>&#9724;&#32;Les avantages de l’application web</h4>
+
+      <div class="desc_2 col-md-6" style="clear: both;" id="mob">
+        <h2>Developpement d'application Mobile<hr/></h2>
+        <p style="text-align: justify;">
+         <b><i class="fa fa-quote-left"></i> C’est une application développée pour des terminaux mobile (smartphones, tablettes…). Elle peut aussi avoir la mission d’optimiser des applications déjà...<br><br>
+        </p>
+        <a href="mobile.html" class="btn btn-danger" style="background-color: #000029; border:none; font-family:Eras Bold ITC;width: 200px; ">VOIR PLUS</a>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h5>MAÎTRISE DE VOTRE BUDGET ET DIMINUTION DES COÛTS</h5>
-          <p style="text-align: justify;">•  La mise de départ est inexistante<br>
-          • Aucune mise à niveau de votre infrastructure <br>
-          • Le budget est prévisible par un abonnement mensuel fixe<br>
-          • Investissement étalé dans le temps<br>
-          • Vous ne payez que pour les fonctionnalités que vous utilisez<br>
-          • La facturation est proportionnelle à votre consommation réelle<br>
-          • Les frais d’adaptation, de maintenance et d’améliorations sont inclus<br>
-          • Vous faites une économie sur le matériel informatique<br><br><br>
-          </p>
-         </div>
-        <div class="col-md-6">
-          <br><br><img src="img/service/1.png" widht="200px" height="200px">
-        </div>
+      <div class="lecteur-2 col-md-6">
+         <video src="video/video-2.mp4" width="100%" height="274px" poster="img/service/04.jpg"></video>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="img/service/2.png"  widht="200px" height="200px">
-        </div>
-        <div class="col-md-6">
-          <h5>GAIN DE TEMPS</h5>
-          <p style="text-align: justify;">•  La mise en œuvre et le déploiement sont plus rapides (vous vous inscrivez et tout est installé)<br>
-          • La circulation et le partage des données entre utilisateurs sont optimisés<br>
-          • Vous évitez les sollicitations de personnels informatiques<br>
-          • Utilisation des applications plus intuitive et plus facile<br><br><br>
-          </p>
-        </div>
+       <br><br><br><br><br><br>
+
+      <div class="lecteur-1 col-md-6" style="clear: both;">
+        <video src="video/video-3.mp4" width="100%" height="274px" poster="img/service/02.jpg"></video>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h5>ACCESSIBILITÉ OPTIMISÉE</h5>
-          <p style="text-align: justify;">•  Accès universel depuis n’importe quel type de poste : PC, portables, téléphone mobile, tablette, …<br>
-          • Aucune incompatibilité de système d’exploitation (il suffit d’avoir un navigateur)<br>
-          • Vous pouvez travailler depuis n’importe quel endroit de la planète<br>
-          • Vos données sont centralisées<br>
-          • Vos données sont disponibles 24h sur 24 et 7j sur 7<br><br><br>
-          </p>
-        </div>
-         <div class="col-md-6">
-          <br><br><img src="img/service/3.png"  widht="200px" height="200px">
-        </div>
+      <div class="desc_1 col-md-6" id="web">
+        <h2>Developpement d'application Web<hr/></h2>
+        <p style="text-align: justify;">
+          <b><i class="fa fa-quote-left"></i> Une application web désigne un logiciel applicatif hébergé sur un serveur et accessible via un navigateur web...<br><br>
+        </p>
+        <a href="web.html" class="btn btn-danger" style="background-color: #000029; border:none; font-family:Eras Bold ITC;width: 200px; ">VOIR PLUS</a>
       </div>
-    </div>  
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="img/service/4.png"  widht="200px" height="200px">
-        </div>
-        <div class="col-md-6">
-          <h5>MEILLEURE GESTION DE LA SÉCURITÉ</h5>
-          <p style="text-align: justify;">•  Vous profitez des moyens des grandes infrastructures de datacenters<br>
-          • Vos accès aux données sont contrôlés par identification et certificats<br>
-          • Sauvegardes automatiques<br>
-          • Hébergement de vos données dans un cadre contractuel de confidentialité<br><br><br>
-          </p>
-        </div>
-      </div>
-    </div>  
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h5>ÉVOLUTION ET INNOVATION CONTINUE</h5>
-          <p style="text-align: justify;">•  Vous bénéficiez toujours de la version la plus récente<br>
-          • Aucun risque d’obsolescence<br>
-          • La mises à niveau des applications est automatiques et transparentes<br>
-          • Votre retour d’expérience est directement pris en compte pour des améliorations et innovations permanentes<br>
-          • Vous réduisez de la consommation électrique en favorisant la mutualisation des ressources sur des même serveurs<br>
-          </p>
-        </div>
-        <div class="col-md-6">
-          <img src="img/service/5.png"  widht="200px" height="200px">
-        </div>
-      </div>
-    </div>
-    <br><br><br>
+       </div>
+    </div>        
+	</section>
+	<!-- fin service -->
+  <section class="container-fluid devis" id="devis">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <p >L’intérêt pour votre entreprise est de pouvoir permettre à vous et vos collaborateurs, salariés, etc… de pouvoir se concentrer purement et simplement sur votre activité et rien d’autre. Il est donc important pour vous de vous entourer d’applications web répondant avec le plus de pertinence possible à vos besoins et votre contrainte de productivité. Faites confiance à NL Technologie pour développer votre application et ainsi profiter d’outils sur mesure !</p>
+          <h2 class="section-heading">FAITE VOTRE DEVIS</h2>
+          <h3 class="section-subheading text-muted">Conception et Développement de logiciel sur mesure</h3>
         </div>
       </div>
-      <br><br>
-      <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <a href="contact.html" class="btn btn-danger" style="background-color: #000029; border:none; font-family:Eras Bold ITC; ">Commandez-votre Site Web</a>
-                </div>
-              </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nom société...">
             </div>
-    </div>    
-    
-
-
-
-  </div>      
-  </div>
-	</section>
-	<!-- fin service -->
-
-<!-- contact -->
-	<section id="contact">
-        <div class="container">
-          <div class="row">
-              <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Contactez Nous</h2>
-                <h3 class="section-subheading text-muted " >Vous pouvez utiliser le formulaire de contact ci-dessous pour tout demande de
- renseingement.</h3>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-lg-12">
-                <form id="contactForm" name="MessageEnvoyer" novalidate>
-                    <div class="row">
-                      <div class="col-md-6">
-                          <div class="form-group">
-                            <input class="form-control" id="nom" type="text" placeholder="Entrer votre nom" required data-validation-required-message="S'il vous plait entrer votre nom.">
-                            <p class="help-block text-danger"></p>
-                          </div>
-                          <div class="form-group">
-                            <input class="form-control" id="email" type="email" placeholder="Entrer votre adresse email" required data-validation-required-message="S'il vous plait entrer votre adresse email.">
-                            <p class="help-block text-danger"></p>
-                          </div>
-                          <div class="form-group">
-                            <input class="form-control" id="numero" type="tel" placeholder="Entrer votre numero de telephone" required data-validation-required-message="S'il vous plait entrer votre numero de téléphone.">
-                            <p class="help-block text-danger"></p>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="form-group">
-                            <textarea class="form-control" id="message" placeholder="Entrer votre message" required data-validation-required-message="S'il vous plait entrer votre message."></textarea>
-                            <p class="help-block text-danger"></p>
-                          </div>
-                      </div>
-                      <div class="clearfix"></div>
-                      <div class="col-lg-12 text-center">
-                          <a href="#" class="btn btn-danger" style="background-color: #000029; border:none; font-family:Eras Bold ITC; ">ENVOYER</a>
-                      </div>
-                    </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Numéro Télephone...">
+             </div>
+             <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nom de Projet...">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="3" placeholder="Description..."></textarea>
+            </div>
+            <a href="devis.html" class="btn btn-danger" style="background-color: #b3b3b3; color: #000029; border:1px solid #000029;; font-family:Eras Bold ITC;width: 100px; height: 35px; font-size: 15px; font-weight: bold;">ENVOYER</a>
+            
                 </form>
-              </div>
-          </div>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-
-          <div class="row">
-            <div class=" coordoné col-md-12">
-              <div class="col-md-5">
-                <div>
-                  <p><img src="img/contact/localisation.png" widht="15px" height="15px">&#x20;&#x20;Anjanahary II 137 101 Antananarivo-Madagascar</p>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <p><img src="img/contact/tel.png" widht="15px" height="15px">&#x20;&#x20;+261 34 99 797 29</p>
-              </div>
-              <div class="col-md-4">
-                <div>
-                  <p><img src="img/contact/email.png" widht="15px" height="15px">&#x20;&#x20;nltechnologie19@gmail.com</p>
-                </div>
-              </div>
+        </div>
+        <div class="col-md-4">
+          <div class="light">
+            <div>
+              <img src="img/devis.png"  class="resp">
             </div>
           </div>
-        </div>
-    </section>     	
-	<!-- fin contact -->
+          </div>
+          
+      </div>
+    </div>
+  </section>
+  <!-- FIN DEVIS -->
 
 	<!-- footer -->
 	<footer class="container-fluid footer">

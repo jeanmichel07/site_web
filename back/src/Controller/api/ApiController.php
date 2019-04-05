@@ -9,6 +9,7 @@
 namespace App\Controller\api;
 
 
+use App\Entity\Devis;
 use App\Entity\Visitor;
 use App\Repository\EquipeRepository;
 use App\Repository\RecrutmentRepository;
@@ -89,6 +90,32 @@ class ApiController extends AbstractController
             return new JsonResponse(['message' => 'Veuillez remplir tous les champ','test'=>$request->get('name')], Response::HTTP_OK);
         }
     }
+
+
+    /**
+     * @param Request $request
+     * @return JsonResponse
+     *@Rest\Post("/create/devis")
+     */
+    public function devis(Request $request):JsonResponse
+    {
+        $visitor=new Devis();
+        if (!empty($request->get('name')) && !empty($request->get('telephone')) && !empty($request->get('email')) && !empty($request->get('message')))
+        {
+            $visitor->setNomSociete($request->get('name'));
+            $visitor->setTelephone($request->get('telephone'));
+            $visitor->setDescription($request->get('email'));
+            $visitor->setPieceJointe($request->get('message'));
+            $em=$this->getDoctrine()->getManager();
+            $em->persist($visitor);
+            $em->flush();
+            return new JsonResponse(['message' => 'Visiteur inserée'], Response::HTTP_OK);
+
+        }else{
+            return new JsonResponse(['message' => 'Veuillez remplir tous les champ','test'=>$request->get('name')], Response::HTTP_OK);
+        }
+    }
+
 
     /**
      * @return JsonResponse
