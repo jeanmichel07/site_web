@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RecrutmentController!{% endblock %}
+
+{% block body %}
+   <h2>Nouvelle membre</h2>
+   {{ form_start(form) }}
+   {{ form_row(form.nom) }}
+   {{ form_row(form.poste) }}
+   {{ form_row(form.image) }}
+   <input type="submit" value="Ajouter" class="btn btn-success">
+   {{ form_end(form) }}
+{% endblock %}

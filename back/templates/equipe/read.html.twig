@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RecrutmentController!{% endblock %}
+
+{% block body %}
+    <h2>Les membres de l'equipe</h2>
+    {% for e in equipe %}
+        <image src="{{ asset('uploads/' ~ e.image) }}" width="50px">
+
+        {{ e.nom }}
+    {% endfor %}
+{% endblock %}

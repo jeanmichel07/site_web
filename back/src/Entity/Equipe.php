@@ -16,6 +16,7 @@ class Equipe
      */
     private $id;
 
+
     /**
      * @ORM\Column(type="string", length=255)
      */
@@ -31,44 +32,77 @@ class Equipe
      */
     private $image;
 
-    public function getId(): ?int
+    /**
+     * @return mixed
+     */
+    public function getId()
     {
         return $this->id;
     }
 
-    public function getNom(): ?string
+    /**
+     * @param mixed $id
+     * @return Equipe
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNom()
     {
         return $this->nom;
     }
 
-    public function setNom(string $nom): self
+    /**
+     * @param mixed $nom
+     * @return Equipe
+     */
+    public function setNom($nom)
     {
         $this->nom = $nom;
-
         return $this;
     }
 
-    public function getPoste(): ?string
+    /**
+     * @return mixed
+     */
+    public function getPoste()
     {
         return $this->poste;
     }
 
-    public function setPoste(string $poste): self
+    /**
+     * @param mixed $poste
+     * @return Equipe
+     */
+    public function setPoste($poste)
     {
         $this->poste = $poste;
-
         return $this;
     }
 
-    public function getImage(): ?string
+    /**
+     * @return mixed
+     */
+    public function getImage()
     {
         return $this->image;
     }
 
-    public function setImage(string $image): self
+    /**
+     * @param mixed $image
+     * @return Equipe
+     */
+    public function setImage($image)
     {
         $this->image = $image;
-
         return $this;
     }
+
+
 }
