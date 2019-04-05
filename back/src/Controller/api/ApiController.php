@@ -100,12 +100,12 @@ class ApiController extends AbstractController
     public function devis(Request $request):JsonResponse
     {
         $visitor=new Devis();
-        if (!empty($request->get('name')) && !empty($request->get('telephone')) && !empty($request->get('email')) && !empty($request->get('message')))
+        if (!empty($request->get('nom_societe')) && !empty($request->get('telephone')) && !empty($request->get('description')) && !empty($request->get('piece_joint')))
         {
             $visitor->setNomSociete($request->get('name'));
             $visitor->setTelephone($request->get('telephone'));
-            $visitor->setDescription($request->get('email'));
-            $visitor->setPieceJointe($request->get('message'));
+            $visitor->setDescription($request->get('description'));
+            $visitor->setPieceJointe($request->get('piece_joint'));
             $em=$this->getDoctrine()->getManager();
             $em->persist($visitor);
             $em->flush();
