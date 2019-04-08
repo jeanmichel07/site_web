@@ -3,5 +3,7 @@
 {% block title %}Hello RecrutmentController!{% endblock %}
 
 {% block body %}
-    <image src="{{ asset('uploads/' ~ e.image) }}" width="175px"/>
+    <image src="{{ asset('uploads/' ~ e.image) }}" width="175px"/><br>
+    <b>Nom:<i>{{ e.nom }}</i></b><br>
+    <b>Poste:<i>{{ e.poste }}</i></b>
 {% endblock %}
